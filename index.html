@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+	  <title>Méteo</title>
+	  <meta charset="UTF-8">  
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="style.css">
+	  <script type="text/javascript" src="meteo.js"></script>
+	
+	</head>
+	
+	<body>
+	
+	<header class="header">
+	<h1> TP Météo HTML</h1>
+	</header>
+	<label for="capital" style="font-size: 20px; color: gray;"> Choisir une ville :</label>
+	<select onchange=showCity(this) id="sel" name="capital">
+		<option value=""></option>
+		<option value="paris">Paris</option>
+		<option value="londres">Londres</option>
+		<option value="rabat">Rabat</option>
+	</select>
+
+	<div class="div1">
+	
+	<div id="paris" class="city" style="display: none;">
+	<h2>Paris <img src="nuageux.png" height=10% width=10%></h2>
+	<p>10°, nuageux</p>
+	</div>
+
+	<div id="londres" class="city" style="display: none;">
+	
+	<h2>Londres <img src="sun.png" height=10% width=10%></h2>
+	<p>38°, ensoleillé</p>
+	</div>
+
+	<div id="rabat" class="city" style="display: none;">
+	
+	<h2>Rabat <img src="orageux.png" height=10% width=10%></h2>
+	<p>13°, pluvieux </p>
+	</div>
+	
+	</div>
+
+	<footer>
+	<p> BENAZZA Amine And LYAGOUBI Mohamed </p>
+	<p>Icones météo par <a href="https://icones8.fr/icons/set/weather">Icone weather</a></p>
+	</footer>
+	
+	</body>
+	
+</html>
